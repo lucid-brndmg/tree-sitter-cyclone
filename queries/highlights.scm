@@ -11,6 +11,8 @@
 
 ["int" "real" "bool" "bv" "enum"] @type
 
+(identifier ) @variable
+
 (function_decl
   function_identifier: (identifier) @function)
 
@@ -22,11 +24,13 @@
 
 [(line_comment) (block_comment)] @comment
 
-(identifier ) @variable
-
 [(literal_int) (literal_bv) (literal_real)] @number
 
 [(literal_string) (literal_char)] @string
+
+(literal_enum) @enum
+
+(type_mark (identifier) @enum)
 
 [
   "("
