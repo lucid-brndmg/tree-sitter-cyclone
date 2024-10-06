@@ -156,11 +156,17 @@ module.exports = grammar({
 
     assert_expr: $ => seq(
       // todo: annotationExpr?
+      optional($.annotation),
       "assert",
       optional(field("assert_qualifier", choice("some", "always"))),
       field("assert_body", $.expr),
       optional($._in_identifiers),
       ";"
+    ),
+
+    annotation: $ => seq(
+      "@", "label", ":",
+      $.identifier
     ),
 
     path_decl: $ => seq(

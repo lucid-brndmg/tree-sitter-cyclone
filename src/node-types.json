@@ -1,5 +1,20 @@
 [
   {
+    "type": "annotation",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "assert_expr",
     "named": true,
     "fields": {
@@ -37,6 +52,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "annotation",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1653,6 +1678,10 @@
   },
   {
     "type": ">>=",
+    "named": false
+  },
+  {
+    "type": "@",
     "named": false
   },
   {
