@@ -28,7 +28,7 @@
           }
         ]
       },
-      "assert_qualifier": {
+      "assert_quantifier": {
         "multiple": false,
         "required": false,
         "types": [

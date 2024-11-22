@@ -1463,7 +1463,7 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
 
 enum ts_field_identifiers {
   field_assert_body = 1,
-  field_assert_qualifier = 2,
+  field_assert_quantifier = 2,
   field_compiler_option_name = 3,
   field_compiler_option_value = 4,
   field_const_decl = 5,
@@ -1520,7 +1520,7 @@ enum ts_field_identifiers {
 static const char * const ts_field_names[] = {
   [0] = NULL,
   [field_assert_body] = "assert_body",
-  [field_assert_qualifier] = "assert_qualifier",
+  [field_assert_quantifier] = "assert_quantifier",
   [field_compiler_option_name] = "compiler_option_name",
   [field_compiler_option_value] = "compiler_option_value",
   [field_const_decl] = "const_decl",
@@ -2009,7 +2009,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_invariant_identifier, 1},
   [215] =
     {field_assert_body, 2},
-    {field_assert_qualifier, 1},
+    {field_assert_quantifier, 1},
   [217] =
     {field_assert_body, 1},
     {field_in_identifier, 2, .inherited = true},
@@ -2068,7 +2068,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_edge_source, 3},
   [260] =
     {field_assert_body, 2},
-    {field_assert_qualifier, 1},
+    {field_assert_quantifier, 1},
     {field_in_identifier, 3, .inherited = true},
   [263] =
     {field_goal_final_length, 1},
@@ -2113,7 +2113,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_goal_final_length, 1, .inherited = true},
   [296] =
     {field_assert_body, 3},
-    {field_assert_qualifier, 2},
+    {field_assert_quantifier, 2},
   [298] =
     {field_assert_body, 2},
     {field_in_identifier, 3, .inherited = true},
@@ -2163,7 +2163,7 @@ static const TSFieldMapEntry ts_field_map_entries[] = {
     {field_goal_final_with, 4},
   [336] =
     {field_assert_body, 3},
-    {field_assert_qualifier, 2},
+    {field_assert_quantifier, 2},
     {field_in_identifier, 4, .inherited = true},
   [339] =
     {field_function_parameter, 1},

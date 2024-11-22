@@ -158,7 +158,7 @@ module.exports = grammar({
       // todo: annotationExpr?
       optional($.annotation),
       "assert",
-      optional(field("assert_qualifier", choice("some", "always"))),
+      optional(field("assert_quantifier", choice("some", "always"))),
       field("assert_body", $.expr),
       optional($._in_identifiers),
       ";"

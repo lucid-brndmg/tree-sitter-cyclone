@@ -830,7 +830,7 @@
           "members": [
             {
               "type": "FIELD",
-              "name": "assert_qualifier",
+              "name": "assert_quantifier",
               "content": {
                 "type": "CHOICE",
                 "members": [
